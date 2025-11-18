@@ -174,7 +174,26 @@
   text-align: center;
   white-space: normal;
 }
+.h-sub {
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+  animation: rotateZoom 1.2s ease forwards;
+}
 
+@keyframes rotateZoom {
+    0% {
+    opacity: 0;
+    transform: rotateX(0deg) scale(0.2);
+  }
+  60% {
+    opacity: 1;
+    transform: rotateX(360deg) scale(1.1);
+  }
+  100% {
+    transform: rotateX(360deg) scale(1);
+  }
+}
 
   </style>
 </head>
@@ -196,7 +215,8 @@
       </ul>
     </nav>
     <div class="hamburger" id="hamburger" aria-label="open menu" role="button" tabindex="0">
-      <span></span><span></span><span></span>
+      <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+
     </div>
   </div>
   <div class="mobile-nav" id="mobileNav">
@@ -205,7 +225,7 @@
     <a href="#commitment">Our Commitment</a><br>
     <a href="#faq">FAQ</a><br>
     <a href="#contact">Contact</a><br>
-    <a class="cta-primary" href="#contact">Schedule a Consultation</a>
+   
   </div>
 </header>
 
@@ -425,7 +445,7 @@
 <script>
   // Typing animation for H1 (cycles through phrases)
   const phrases = [
-  `<span style="color:blue;">Ganga Realty</span> <span style="color:white;">Built on</span> <span style="color:lightyellow;">Trust</span>`,
+  `<span style="color:#ADD8E6;">Ganga Realty</span> <span style="color:white;">Built on</span> <span style="color:lightyellow;">Trust</span>`,
   `<span style="color:white;">Designed for</span> <span style="color:red;">Life</span> <span style="color:white;">in</span> <span style="color:green;">Gurgaon</span>`
 ];
  let current = 0, charIndex = 0, forward = true;
